@@ -1,16 +1,12 @@
 package projektdel3;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Main {
-	
+
 	//****** Menylayout ******//
 	//make object of passenger in top
-
-
 	public static void main(String[] args) {
-		
 		Menu();
 	}
 		
@@ -26,11 +22,8 @@ public class Main {
         System.out.println(" ----------------------------- ");
     }
 
-		
 	//****** Input/options för Passagerarlista ******//
-	
 		private static void Menu() {
-			
 			Scanner myScanner=new Scanner(System.in);
 			Ticket myTicket=new Ticket();
 			Passenger aPassenger = new Passenger();
@@ -46,9 +39,9 @@ public class Main {
 				
 				//small letter at the start of "addP" and showP" [same in UML]
 				
-					case '1' -> aPassenger.AddPassenger(myTicket);
+					case '1' -> aPassenger.addPassenger(myTicket);
 					
-					case '2' -> aPassenger.ShowPassengerList();
+					case '2' -> aPassenger.showPassengerList();
 					
 					case '0' -> System.exit(0);
 					

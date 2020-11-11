@@ -7,14 +7,12 @@ public class Passenger {
 
     private String myName; 
     private int myAge;
-
-	    //arraylist methods
+	ArrayList<Passenger> aPassengerList = new ArrayList<>();
+	//arraylist methods
     //put empty constructor (only to use for making the main object)
-    public Passenger () {
-    	
-    }
-    ArrayList<Passenger> aPassengerList = new ArrayList<>();
-	public void AddPassenger(Ticket aTicket) {
+    public Passenger () {}
+
+	public void addPassenger(Ticket aTicket) {
 		Scanner myScanner = new Scanner(System.in);
 		
 	    System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ *");
@@ -32,10 +30,10 @@ public class Passenger {
 		int aAge = myScanner.nextInt();
 		
 		aPassengerList.add(new Passenger(aFullName, aAge));
-		String myName=aFullName;
+		myName=aFullName; //String in front before. see if it works
 		
 		if(aAge>=0) {
-			aTicket.ShowTicket(aPassengerList.get(aPassengerList.size()-1).getMyAge(), myName);
+			aTicket.showTicket(aPassengerList.get(aPassengerList.size()-1).getMyAge(), myName);
 		}
 		else {
 			System.out.println(" -----------------------");
@@ -43,38 +41,36 @@ public class Passenger {
 			System.out.println(" -----------------------");
 
 		}
-	}
+	} // METHOD
 	
-	public void ShowPassengerList() {
+	public void showPassengerList() {
 		for (int index=0;index<aPassengerList.size();index++) {
 			System.out.println((index+1)+". " + aPassengerList.get(index).getMyName() + ". Age: " + aPassengerList.get(index).getMyAge());
-			
 		}
 		//****** Pausar menylistan ******//
-		Pause();
-	}
-	private void Pause() {
-		  System.out.println(" -------------------------------");
-          System.out.println("  > Press any key to continue < ");
-          System.out.println(" -------------------------------");
+		pause();
+	} // METHOD
 
+	private void pause() {
+		System.out.println(" -------------------------------");
+		System.out.println("  > Press any key to continue < ");
+		System.out.println(" -------------------------------");
 		new java.util.Scanner(System.in).nextLine();
-		
-	}
+	} // METHOD
+
   //****** Getter för myName ******//
-public String getMyName() {
-    return myName;
-}
+	public String getMyName() {
+		return myName;
+	} // METHOD
 
   //****** Getter för myAge ******//
-public int getMyAge() {
+	public int getMyAge() {
         return myAge;
-}
-    
+} // METHOD
 
   //****** Konstruktor för age och name ******//
-	    public Passenger (String aName, int aAge) {
-	    myName=aName;
-	    myAge=aAge;
-	    }
+	public Passenger (String aName, int aAge) {
+	myName=aName;
+	myAge=aAge;
+	} // METHOD
 }
