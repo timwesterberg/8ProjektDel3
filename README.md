@@ -1,4 +1,4 @@
-# Group8 - ProjektDel3
+#Group 8 - Project Part 3
 ##Console Application for a conductor on a train, selling Single tickets/monthly cards and need access to the passenger list. 
 We have used the scanner to read data input, making it possible for the user to navigate in menus by choosing between 
 different options. The price of Single Ticket and Monthly Card are depending on the passengers age and the two options 
@@ -69,35 +69,35 @@ Project -> repository on GitHub; Meeting with Sandra around 14.15. Code fixes af
 Application, move code to other classes(switch->main & passenger, if/else->passenger & ticket).
 
 ###4/11-2020
-######4/4 attendending
+######4/4 attending
 Shared code through Github, discussing issue and solutions (passenger list), coded on a shared screen, planned task 
 until next time:
 - Solve ArrayList; Finish up UML; Complete Ticket class; Read through the assignment and Report, discuss what's left to 
 do on Friday(if any).
 
 ###5/11-2020
-######3/4 attendending
+######3/4 attending
 Decided to delete everything(Code, UML) and start from scratch together. Made our UML together(coding on a shared screen)
 
 ###6/11-2020
-######4/4 attendending
+######4/4 attending
 Translated the UML into code together with our data types and methods (coding on a shared screen)
 
 ###7/11-2020
-######4/4 attendending
+######4/4 attending
 Worked together with the Ticket Class and finished it (coding on a shared screen)
 
 ###8/11-2020
-######4/4 attendending
+######4/4 attending
 Started with Passenger class and finished main together (coding on a shared screen)
 
 ###9/11-2020
-######4/4 attendending
+######4/4 attending
 Finished up Passenger class and moved ArrayList from Passenger to main, we couldn't make it work in Passenger. Made the 
 code complete and able to run.
 
 ###10/11 
-######4/4 attendending
+######4/4 attending
 Small detail fixes in the code, no major adjustments, fixing layout adjustments for user experience. 
 Creating our ppt, looking over our UML and code are correct and discussed our report. 
 

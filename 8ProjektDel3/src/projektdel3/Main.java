@@ -1,64 +1,39 @@
 package projektdel3;
 
 import java.util.Scanner;
-
+/* Main - our Menu
+ Our Main Class holds and runs our menu-methods;
+ - menuOption with our options;
+ - menuLayout with the looks of our menu, showing the user available options
+ */
 public class Main {
+	public static void main(String[] args) { menuOption(); }
+	private static void menuOption() {
+		Scanner myScanner=new Scanner(System.in);
+		Ticket myTicket=new Ticket();
+		Passenger aPassenger = new Passenger();
 
-	//****** Menylayout ******//
-	//make object of passenger in top
-	public static void main(String[] args) {
-		Menu();
-	}
-		
-	private static void MenuLayout() {
-        System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * ");
-        System.out.println(" *     Welcome Conductor     * ");
-        System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * ");
-        System.out.println("      > Make an option <       ");
-        System.out.println(" ----------------------------- ");
-        System.out.println("-> (1) Add a passenger         ");
-        System.out.println("-> (2) See the passenger list  ");
-        System.out.println("-> (0) Exit the program        ");
-        System.out.println(" ----------------------------- ");
-    }
+		while(true) {
+			menuLayout();
+			char aInput = myScanner.next().charAt(0);
 
-	//****** Input/options för Passagerarlista ******//
-		private static void Menu() {
-			Scanner myScanner=new Scanner(System.in);
-			Ticket myTicket=new Ticket();
-			Passenger aPassenger = new Passenger();
-			
-			//passenger class
-			
-			
-			while(true) {
-				MenuLayout();
-				char aInput = myScanner.next().charAt(0);
-				
-				switch(aInput) {
-				
-				//small letter at the start of "addP" and showP" [same in UML]
-				
-					case '1' -> aPassenger.addPassenger(myTicket);
-					
-					case '2' -> aPassenger.showPassengerList();
-					
-					case '0' -> System.exit(0);
-					
-					default -> System.out.println("Invalid input ");
-				}
+			switch(aInput) {
+				case '1' -> aPassenger.addPassenger(myTicket);
+				case '2' -> aPassenger.showPassengerList();
+				case '0' -> System.exit(0);
+				default -> System.out.println("Invalid input ");
 			}
 		}
-		
-		//****** Lägger till passagerare i lista ******//
-		
-		//copy paste to Passenger class
-		//make object in menu
-		
-
-		
-		//****** Visar passagerarlistan ******//
-		//passenger class
-		
-		
 	}
+	private static void menuLayout() {
+		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * ");
+		System.out.println(" *     Welcome Conductor     * ");
+		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * ");
+		System.out.println("      > Make an option <       ");
+		System.out.println(" ----------------------------- ");
+		System.out.println("-> (1) Add a passenger         ");
+		System.out.println("-> (2) See the passenger list  ");
+		System.out.println("-> (0) Exit the program        ");
+		System.out.println(" ----------------------------- ");
+	}
+}

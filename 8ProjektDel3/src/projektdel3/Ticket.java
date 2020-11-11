@@ -30,7 +30,6 @@ public class Ticket {
 				break;
 			}
 			else if (aInput==2) {
-				
 				System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *");
                 System.out.println(" *    MONTHLY TICKET         *");
                 System.out.println(" * ------------------------- *");
@@ -46,11 +45,9 @@ public class Ticket {
 	            System.out.println(" -------------------------------");
 			}
 		}
-		//****** Pausar menylistan från att visas igen ******//
 		pause();
 	}
-	
-	//****** returnerar månadspris beroende på ålder ******//
+
 	private int returnMonthlyPrice(int aAge) {
 		int myPrice;
 		if(aAge < 0) {
@@ -64,7 +61,6 @@ public class Ticket {
 		}
 		return myPrice;
 	}
-	//****** returnerar enkelbiljett beroende på ålder ******//
 	
 	private int returnSinglePrice(int aAge) {
 		int myPrice;
@@ -80,7 +76,7 @@ public class Ticket {
 		return myPrice;
 		
 	}
-	//****** returnerar ålderskategori ******//
+
 	private String returnTicketType(int aAge) {
 		String myTicketType;
 		if (aAge<18) {
@@ -94,9 +90,11 @@ public class Ticket {
 		}
 		return myTicketType;
 	}
-	//****** pausmetoden******//
-	private void pause() {
-		System.out.println("Press any key to continue... ");
+
+	public void pause() {
+		System.out.println(" -------------------------------");
+		System.out.println("  > Press any key to continue < ");
+		System.out.println(" -------------------------------");
 		new java.util.Scanner(System.in).nextLine();
 	}
 }
