@@ -7,7 +7,9 @@ import java.util.Scanner;
  - menuLayout with the looks of our menu, showing the user available options
  */
 public class Main {
-	public static void main(String[] args) { menuOption(); }
+	public static void main(String[] args) {
+		menuOption();
+	}
 	private static void menuOption() {
 		Scanner myScanner=new Scanner(System.in);
 		Ticket myTicket=new Ticket();
@@ -26,14 +28,14 @@ public class Main {
 		}
 	}
 	private static void menuLayout() {
-		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * ");
-		System.out.println(" *     Welcome Conductor     * ");
-		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ * ");
-		System.out.println("      > Make an option <       ");
-		System.out.println(" ----------------------------- ");
-		System.out.println("-> (1) Add a passenger         ");
-		System.out.println("-> (2) See the passenger list  ");
-		System.out.println("-> (0) Exit the program        ");
-		System.out.println(" ----------------------------- ");
+		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *");
+		System.out.println(" *      Welcome Conductor      *");
+		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *");
+		System.out.println("       > Make an option <       ");
+		System.out.println(" -------------------------------");
+		System.out.println("-> (1) Add a passenger          ");
+		System.out.println("-> (2) See the passenger list   ");
+		System.out.println("-> (0) Exit the program         ");
+		System.out.println(" -------------------------------");
 	}
 }
