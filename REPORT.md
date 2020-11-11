@@ -1,9 +1,12 @@
-#Group 8 - Project Part 3
-##Console Application for a conductor on a train, selling Single tickets/monthly cards and need access to the passenger list. 
+#Team-Tim
+##Group 8 - Project Part 3
+######Astrid Stenvall | Felicia Olsson | Stefan Vitas | Tim Westerberg
+####Console Application for a conductor, selling single tickets/monthly cards on a train and need access to see the passenger list. 
 We have used the scanner to read data input, making it possible for the user to navigate in menus by choosing between 
 different options. The price of Single Ticket and Monthly Card are depending on the passengers age and the two options 
 are presented to the user after adding a new passenger to the passenger list. When the user proceed there will be a 
-ticket/card printed with the passengers name, the price, and the price type on it. 
+ticket/card printed with the passengers name, the price, and the price type on it.
+
 ###StartUp
 We began our project with creating a document for our textual analysis, choosing candidates for our variables, objects, 
 methods and actors within the code. Thereafter, we chose which candidates to include in our project, followed by a 
@@ -51,66 +54,108 @@ list growing in size when new Passengers were added to the list.
 ##Daily Logs
 ###29/10-2020
 ######4/4 attending
-Started discussing how to dispose our time, wrote our Textual Analysis + UML to get a picture of our code.
+Everyone participated in discussions about how to dispose our time, Tim created and shared a Google Drive for our project 
+documents. Everyone participated in our Textual Analysis, priorly Tim and Astrid wrote. Felicia created a shared UML. 
+Tim, Astrid and Felicia wrote in day log.
 
 ###30/10-2020
 ######4/4 attending
-Did research, talked about ideas, coded our "skeleton" together, tried to solve issues, wrote Pseudocode and split code 
-into individual tasks.
+Did research, talked about ideas, coded our "skeleton" in pseudocode together (Felicia shared screen), tried to solve 
+issues, all agreed individually on the decision to split the code into individual tasks. Felicia made a Discord Server 
+and invited the rest of the group. Group had a conflict about cooperation, Astrid wanted to leave the group (Felicia 
+asked Astrid to please join us again). 
+Tim and Felicia wrote in day log.
 
 ###2/11-2020
 ######3/4 attending
-Meeting after 14.30 (Decided on guidelines for upcoming meetings, what to do next, issues discussed), coded switch-case 
-in class Application
+Astrid decided to continue as a part of our group(Yay!). Tim spent time to research vector and Stefan had coded examples 
+of the ArrayList. Felicia did the switch-case + if/else in Application class while sharing screen. 
+Everyone participated on meeting after 14.30 (Decided on guidelines for upcoming meetings, what to do next, issues discussed).
+Tim wrote in report: introduction + textual analysis. 
+Tim and Felicia wrote in day log.
 
 ###3/11-2020
 ######4/4 attending
-Project -> repository on GitHub; Meeting with Sandra around 14.15. Code fixes after Sandras input; Delete class 
-Application, move code to other classes(switch->main & passenger, if/else->passenger & ticket).
+Felicia made a repository on GitHub giving the group members access; Everyone attending on meeting with Sandra around 
+14.15, Tim sharing screen. Code fixes by Tim during her feedback; Delete class Application, move code to other classes
+(switch->main & passenger, if/else->passenger & ticket). Tim wrote about Object oriented programming in report.
+Felicia wrote in day log.
 
 ###4/11-2020
 ######4/4 attending
-Shared code through Github, discussing issue and solutions (passenger list), coded on a shared screen, planned task 
-until next time:
+Astrid and Stefan decided to try out Enum in Ticket-class together. Tim got responsibility over ArrayList. Felicia coded 
+with shared screen, Main class, and pushed to GitHub, assigned to look over UML, and read through report. Felicia also 
+made a runnable version of the assignment on her own. Everyone participates in discussing issue and solutions (passenger 
+list), planned tasks until next time:
 - Solve ArrayList; Finish up UML; Complete Ticket class; Read through the assignment and Report, discuss what's left to 
 do on Friday(if any).
+Tim finished our first draft of our report. 
+Tim and Felicia wrote in day log.
 
 ###5/11-2020
-######3/4 attending
-Decided to delete everything(Code, UML) and start from scratch together. Made our UML together(coding on a shared screen)
+######4/4 attending
+Astrid had been researching Enum and wasn't sure if we should use it. Felicia was done with her task. Everyone 
+participated at our meeting and checked in what we have done, and what we plan to do next. 
 
 ###6/11-2020
-######4/4 attending
-Translated the UML into code together with our data types and methods (coding on a shared screen)
+######3/4 attending
+Decided to delete everything(Code, UML) and start from scratch together, after feedback from Sandra. Group decided together
+to put Felicia in charge of the project, so she could guide the others with help from the version she completed alone. 
+Made our new UML together(Tim coding with a shared screen, Stefan translating UML to Tim and the other way around at the end, 
+Felicia was support/guide). Astrid had evening plans and couldn't join us in the afternoon.
+Felicia wrote in day log (discord).
 
 ###7/11-2020
 ######4/4 attending
-Worked together with the Ticket Class and finished it (coding on a shared screen)
+Stefan and Tim repeated what we did the day before by explaining it to Astrid, suggested exercise by Felicia. Tim shared
+screen, Astrid and Tim was taking turns in writing code finishing the UML into code and completed Ticket class together, 
+Felicia as well but to illustrate mostly. Felicia suggested that it would be a good idea for Astrid to try to write code 
+from UML on her own until tomorrow.
+Felicia wrote in day log (discord).
 
 ###8/11-2020
 ######4/4 attending
-Started with Passenger class and finished main together (coding on a shared screen)
+Felicia felt ill and was late to the meeting. When she arrived, she supported Astrid, Tim and Stefan to get started with 
+the Passenger Class and finish main together (Tim shared screen). Astrid also showed how far she got on her own with the 
+task (translating UML into on her own code).
+Felicia wrote in day log (discord).
 
 ###9/11-2020
 ######4/4 attending
-Finished up Passenger class and moved ArrayList from Passenger to main, we couldn't make it work in Passenger. Made the 
-code complete and able to run.
+Finished up Passenger class and moved ArrayList from Passenger to main (Felicia support, Astrid and Tim coding on Tim's 
+shared screen). We couldn't make the ArrayList work the way we wanted in Passenger class, so we decided to have it in main. 
+We completed the code, which also is able to run. We split parts to present the 12:th:
+- Astrid: Menu
+- Felicia: Passenger
+- Stefan: Ticket
+- Tim: ArrayList
+Felicia wrote in day log (discord). Tim updated our day log in the shared Drive. 
 
-###10/11 
+###10/11-2020
 ######4/4 attending
-Small detail fixes in the code, no major adjustments, fixing layout adjustments for user experience. 
-Creating our ppt, looking over our UML and code are correct and discussed our report. 
+Meeting with Sandra, feedback and guidance to move arraylist to passenger (Tim shared screen). Over all: Small detail 
+fixes in the code (Tim shared screen and took turns to code with astrid after meeting), no major adjustments, fixing 
+layout adjustments for user experience (Astrid). Creating our ppt (Felicia), looking over our UML (Stefan) and code are 
+correct (Everyone) and discussed our report (Everyone). 
+Astrid wrote in day log yesterday. Felicia wrote in day log (discord).
+
+###11/11-2020
+####4/4 attending
+Today, Felicia shared screen while adjusting details from Sandra's feedback in our code, Felicia wrote the report in .md 
+file while the rest of the group helped out with input. Felicia and Astrid finished UML, Tim fixed UML .png for our ppt, 
+we had discussions about the time we had together, appreciating each others contributions to the group, and our now 
+finished project. 
+Felicia wrote in day log (discord).
+We all wrote the day log in here. 
 
 ##Object Orientation 
 Object orientated programming supports encapsulation, heritage, and puts objects into a permanent secondary memory which 
 allows the program and applications to access the objects (Elmasri & Navate, 2004). Our program includes a Main class 
 invoking the private methods from Passenger- and Ticket-class. We categorized our classes Passenger and Ticket with 
-focus on our two prior objects: Passenger and Ticket, which makes this an object orientated application. 
-
-The objects are varying and integrating with each other which is
-the general idea of the Java language being object orientated with the general idea of easily being able to use and reuse 
-the classes within the programme. Choosing names for the classes which makes sense makes it easier for bystanders and the 
-programming team to understand the code. 
+focus on our two prior objects: Passenger and Ticket, which makes this an object orientated application. The objects are 
+varying and integrating with each other which is the general idea of the Java language being object orientated, with the 
+general idea of easily being able to use and reuse the classes within the programme. Choosing names for the classes which 
+makes sense makes it easier for bystanders, and the programming team to understand the code. 
 
 ##Responsibilities
 ####Which classes and methods have who had responsibility over?
