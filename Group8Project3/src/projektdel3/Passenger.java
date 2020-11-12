@@ -7,12 +7,11 @@ public class Passenger {
 
     private String myName; 
     private int myAge;
-	ArrayList<Passenger> aPassengerList = new ArrayList<>(); // We create an object from ArrayList called ...
+	ArrayList<Passenger> aPassengerList = new ArrayList<>();
 
     public Passenger() {}
-    // Method for adding passengers to our passenger list, holding initialized object aTicket inside parameters
 	public void addPassenger(Ticket aTicket) {
-		Scanner myScanner = new Scanner(System.in); // initialize Scanner to object named myScanner
+		Scanner myScanner = new Scanner(System.in);
 
 		System.out.println(" * ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ *");
         System.out.println(" *    > Add new passenger <    *");
@@ -30,7 +29,7 @@ public class Passenger {
 		aPassengerList.add(new Passenger(aFullName, aAge));
 		myName=aFullName;
 		
-		if(aAge>=0) { // use object aTicket to reach method showTicket, referring to our list and setting size
+		if(aAge>=0) {
 			aTicket.showTicket(aPassengerList.get(aPassengerList.size()-1).getMyAge(), myName);
 		}
 		else {
@@ -52,7 +51,7 @@ public class Passenger {
 	public int getMyAge() {
     	return myAge;
     }
-	public Passenger(String aName, int aAge) {
+	public Passenger (String aName, int aAge) {
 	myName=aName;
 	myAge=aAge;
 	}

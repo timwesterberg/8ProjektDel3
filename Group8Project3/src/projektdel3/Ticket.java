@@ -44,13 +44,7 @@ public class Ticket {
 	            System.out.println(" -------------------------------");
 			}
 		}
-		pause(); //dont want to be sent back to menu automatically
-	}
-	public void pause() {
-		System.out.println(" -------------------------------");
-		System.out.println("  > Press any key to continue < ");
-		System.out.println(" -------------------------------");
-		new java.util.Scanner(System.in).nextLine();
+		pause();
 	}
 	private int returnMonthlyPrice(int aAge) {
 		int myPrice;
@@ -77,6 +71,7 @@ public class Ticket {
 			myPrice=20;
 		}
 		return myPrice;
+		
 	}
 	private String returnTicketType(int aAge) {
 		String myTicketType;
@@ -90,5 +85,11 @@ public class Ticket {
 			myTicketType="SENIOR";
 		}
 		return myTicketType;
+	}
+	public void pause() {
+		System.out.println(" -------------------------------");
+		System.out.println("  > Press any key to continue < ");
+		System.out.println(" -------------------------------");
+		new java.util.Scanner(System.in).nextLine();
 	}
 }

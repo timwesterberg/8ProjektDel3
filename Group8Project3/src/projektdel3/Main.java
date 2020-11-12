@@ -11,17 +11,17 @@ public class Main {
 		menuOption();
 	}
 	private static void menuOption() {
-		Scanner myScanner=new Scanner(System.in); // initialize (class) Scanner to object myScanner
-		Ticket myTicket=new Ticket(); // initialize class Ticket to object myTicket
-		Passenger aPassenger = new Passenger();// initialize class Passenger to object aPassenger
+		Scanner myScanner=new Scanner(System.in);
+		Ticket myTicket=new Ticket();
+		Passenger aPassenger = new Passenger();
 
 		while(true) {
 			menuLayout();
-			char aInput = myScanner.next().charAt(0); // Scanner to read Conductors input
+			char aInput = myScanner.next().charAt(0);
 
 			switch(aInput) {
-				case '1' -> aPassenger.addPassenger(myTicket); //class.method(object: myTicket) -> present Ticket class
-				case '2' -> aPassenger.showPassengerList(); //class.method() -> present ArrayList in Passenger class
+				case '1' -> aPassenger.addPassenger(myTicket);
+				case '2' -> aPassenger.showPassengerList();
 				case '0' -> System.exit(0);
 				default -> System.out.println("Invalid input ");
 			}
